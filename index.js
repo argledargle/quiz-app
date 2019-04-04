@@ -49,25 +49,21 @@ const   questionArray = [
         question: `What is the term used by sales and marketing teams to divide between business sizes and verticals?`,
         answers: [`Marketing plan`, `Sales strategy`, `Go-to-market strategy`, `Market segment`],
         correctAnswer: 4,
-        additionalInfo: `Although these other items are taken into consideration in the sales cylce, the market segment is `
+        additionalInfo: `Although these other items are taken into consideration in the sales cylce, the market segment refers to specific groups divided by size and vertical.`
     },
     {
         question: `What is the type of lead that is generated solely by the sales rep with no influence from marketing?`,
-        answerA: 
-        answerB: 
-        answerC: 
-        answerD: 
-        correctAnswer: 
+        answers: [`Cold lead`, `Hot lead`, `Warm lead`, `Auto-lead`],
+        correctAnswer: 0,
+        additionalInfo: `The lead was never heaetd up from marketig or pre-sales activity, so it is considered a cold lead.`
     },
     {
-        question: 
-        answerA: 
-        answerB: 
-        answerC: 
-        answerD: 
-        correctAnswer: 
-    },
-]
+        question: ``,
+        answers: [],
+        correctAnswer: ``,
+        additionalInfo: ``
+    }
+];
 
 
 //Users should be able to navigate forward and backward in questions
