@@ -58,10 +58,10 @@ const   questionArray = [
         additionalInfo: `The lead was never heaetd up from marketig or pre-sales activity, so it is considered a cold lead.`
     },
     {
-        question: ``,
-        answers: [],
-        correctAnswer: ``,
-        additionalInfo: ``
+        question: `This term refers to any and all items that get distributed by the marketing team to prospects through various campaigns.`,
+        answers: [`collateral`, `material`, `content`, `tactic`],
+        correctAnswer: 3,
+        additionalInfo: `Sales collateral, marketing materials, and blog content are all examples of different types of tactics.`
     }
 ];
 
