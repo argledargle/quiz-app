@@ -68,6 +68,16 @@ const   questionArray = [
 let questionNumber = 0;
 let correctQuestions = 0;
 
+//we need to be able to load the questions into the DOM
+function loadQuestion(
+    $('#question').text(questionArray[questionNumber].question);
+    $('#choices').empty();
+    let totalNumberOfChoices = questionArray[questionNumber].answers.length;
+    for (i=0; i<questionArray[questionNumber].answers.length, i++){
+        $('#choices').append("<input type='radio' class='option' name='option' value=" + i + ">" + questionsArray[questionNumber].answers[i] + "<br>")
+    };
+)
+
 //Users should be able to click a start button to begin the quiz, this
     //start button should clear the screen of all content and then start with the first question
 function startButtonClick(
