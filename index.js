@@ -97,7 +97,7 @@ $(document).ready(function () {
             console.log(correctQuestions); //this is a little debugger for me.
         }
     })
-}
+})
 //Users should be able to navigate forward after clicking on the answer
     //Use an object for each question that uses the question number
     //as a unique identifier.
