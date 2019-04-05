@@ -7,9 +7,32 @@
     <title>Alex's Sales and Marketing quiz</title>
 </head>
 <body>
-    <h1>Alex's sales and marketig quiz!</h1>
-    <form>
-        <button class="Start button">Start!</button>
-    </form>
+    <section class ="start-section">
+        <h1>How much do you know about sales and marketing?</h1>
+        <p>Click start to find out!</p>
+        <button class="start-button">Start</button>
+    </section>
+    <section class = "quiz-section">
+        <div id="questionHere">
+            <h1 id="question">How many cold calls, on average, does it take to get a prospect on the line?</h1>
+            <div id="choices">
+                    <input class="option" type="radio" value="0" name="option">
+                    <br>
+                    <input class="option" type="radio" value="1" name="option">
+                    <br>
+                    <input class="option" type="radio" value="2" name="option">
+                    <br>
+                    <input class="option" type="radio" value="3" name="option">
+                    <br>    
+            </div>
+        </div>
+    </section>
+    <section class ="results">
+        <h2>Final score</h2>
+        <h3 class="final-score">10/10</h3>
+        <div id = "result-message"></div>
+    </section>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src="js/app.js" type="text/javascript"></script>
 </body>
 </html>

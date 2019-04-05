@@ -4,7 +4,7 @@
 
 const   questionArray = [
     {
-        question: `How many cold calls, on average, does it take to get someone on the line?`,
+        question: `How many cold calls, on average, does it take to get a prospect on the line?`,
         answers: [`95`, `80`, `110`, `100`],
         correctAnswer: 3,
         additionalInfo: `Although individual results may vary, it is widely accepted that it takes 100 calls to reach one person and it takes 10 people before you get to your first yes.`
@@ -65,11 +65,15 @@ const   questionArray = [
     }
 ];
 
+let questionNumber = 0;
+let correctQuestions = 0;
+
 //Users should be able to click a start button to begin the quiz, this
     //start button should clear the screen of all content and then start with the first question
 function startButtonClick(
     $(".Start button").addEventListener("click", function(event){
         event.preventDefault()
+        $(".form").html("<h1>Question "$(questionArray[i])" of 10.</h1>");
     });
 );
 
@@ -77,7 +81,7 @@ function startButtonClick(
     //Use an object for each question that uses the question number
     //as a unique identifier.
 function handleRadialClick()
-    let questionNumber = 0;
+    let questionNumber++;
     //write code for each click of a radial button adding 1 to questionNubmer
     let correctQuestions = 0;
     //write code for each correct click to add one to the variable
