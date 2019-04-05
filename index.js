@@ -65,10 +65,22 @@ const   questionArray = [
     }
 ];
 
+//Users should be able to click a start button to begin the quiz, this
+    //start button should clear the screen of all content and then start with the first question
+function startButtonClick(
+    $(".Start button").addEventListener("click", function(event){
+        event.preventDefault()
+    });
+);
 
-//Users should be able to navigate forward and backward in questions
+//Users should be able to navigate forward after clicking on the answer
     //Use an object for each question that uses the question number
     //as a unique identifier.
+function handleRadialClick()
+    let questionNumber = 0;
+    //write code for each click of a radial button adding 1 to questionNubmer
+    let correctQuestions = 0;
+    //write code for each correct click to add one to the variable
 
 
 //Questions should be radial selection tools
@@ -77,7 +89,6 @@ const   questionArray = [
 
 //There should be an indicator showing which question the user is currently on
     //This indicator can be entered into the html and start as hidden
-
 
 //There should be a counter that counts the correct question
     //this counter needs to be used to load the new question
