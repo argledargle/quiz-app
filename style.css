@@ -1,0 +1,14 @@
+body {
+    background-image: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fallbusiness%2Ffiles%2F2018%2F03%2FMarketing-and-sales-1200x720.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    color: darkgreen;
+    background: cyan;
+}
+
+
