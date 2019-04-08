@@ -5,8 +5,8 @@
 const   questionArray = [
     {
         question: `How many cold calls, on average, does it take to get a prospect on the line?`,
-        answers: [`95`, `80`, `110`, `100`],
-        correctAnswer: 3,
+        answers: [`95`, `80`, `100`, `110`],
+        correctAnswer: 2,
         additionalInfo: `Although individual results may vary, it is widely accepted that it takes 100 calls to reach one person and it takes 10 people before you get to your first yes.`
     },
     {
@@ -67,21 +67,25 @@ const   questionArray = [
 
 let questionNumber = 0;
 let correctQuestions = 0;
+let numberOfQuestions = questionArray.length
 
 //we need to be able to load the questions into the DOM
 function loadQuestion() {
-    $('#question').text(questionsArray[questionNumber].questionText);
+    $('#question').text(questionArray[questionNumber].question);
     $('#choices').empty();
     let totalNumberOfChoices = questionArray[questionNumber].answers.length;
     for (i=0; i<questionArray[questionNumber].answers.length; i++) {
-        $('#choices').append("<input type='radio' class='option' name='option' value=" + i + ">" + questionsArray[questionNumber].answers[i] + "<br>")
+        let eachChoice = $("<input type='radio' class='option' name='option' value=" + i + ">" + questionArray[questionNumber].answers[i] + "<br>");
+        $('#choices').append(eachChoice);
     };
-    $("#questionNumberDisplay").text("Question " + questionNumber + " of " + questionArray.length + 1);
+    $("#questionNumberDisplay").text("Question " + (questionNumber +1)  + " of " + numberOfQuestions);
 }
 
 //Users should be able to click a start button to begin the quiz, this
     //start button should clear the screen of all content and then start with the first question
 $(document).ready(function () {
+    $('.quiz-section').hide()
+    $('.results').hide()
     $('#start-button').click(function () {
         $('.results').hide();
         $('.start-section').hide();
@@ -89,15 +93,29 @@ $(document).ready(function () {
         $('#result-message').empty();
         loadQuestion()
     })
+    //functionality for when a option is clicked
     $('.quiz-section').on('click', '.option', function () {
         let userAnswer = $("input[class='option']:checked").val();
         let correctAnswer = questionArray[questionNumber].correctAnswer;
         if (userAnswer == correctAnswer) {
             correctQuestions++;
             console.log(correctQuestions); //this is a little debugger for me.
+        };
+        //add the question and the info to the results page
+        $('#result-message').append("<h3>Question " + (questionNumber +1) + ": " + questionArray[questionNumber].question + "</h3>");
+        $('#result-message').append("<h4>Answer: " + questionArray[questionNumber].additionalInfo);
+        //if the quiz is done fill out the final score, show the results, and hide the quiz.
+        //if the quiz isn't done, then advance to the next question.
+        if ((questionNumber + 1 ) == numberOfQuestions) {
+            $(".final-score").text(correctQuestions + " out of " + numberOfQuestions);
+            $(".quiz-section").hide();
+            $(".results").show();
+        } else {
+            questionNumber++;
+            loadQuestion();
         }
-    })
-})
+    });
+});
 //Users should be able to navigate forward after clicking on the answer
     //Use an object for each question that uses the question number
     //as a unique identifier.
