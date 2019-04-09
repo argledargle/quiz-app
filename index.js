@@ -116,20 +116,3 @@ $(document).ready(function () {
         }
     });
 });
-//Users should be able to navigate forward after clicking on the answer
-    //Use an object for each question that uses the question number
-    //as a unique identifier.
-    //write code for each click of a radial button adding 1 to questionNubmer
-
-    //write code for each correct click to add one to the variable
-
-
-//Questions should be radial selection tools
-    //styled in CSS so that they look more like a button
-
-
-//There should be an indicator showing which question the user is currently on
-    //This indicator can be entered into the html and start as hidden
-
-//There should be a counter that counts the correct question
-    //this counter needs to be used to load the new question
