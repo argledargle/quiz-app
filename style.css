@@ -1,5 +1,7 @@
 body {
     background-image: url(http://www.businesspromotions.net/wp-content/uploads/2018/10/How-To-Choose-Right-Sales-Promotion-Ways-For-Your-Toys-Store.png);
+    background-position: top center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,23 +11,42 @@ body {
 
 header {
     color: #E93A70;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #5DBCD2;
+}
+/*gotta pop down these bad boys so they aren't covered by our header*/
+.start-section, .results, .quiz-section {
+    margin-top: 75px;
 }
 
 h2, .final-score {
     color: #BFD845;
+    text-align: center;
+    margin-top: 0;
 }
 
 /* this is the faded background image*/
 .quiz-section, .results {
     background-image: url(https://raw.githubusercontent.com/mariusbanea/thinkful-quiz-app/master/images/transparent.jpg);
+    border-radius: 8px;
 }
 .quiz-section {
     color: #f17f50;
     padding: 32px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
     }
 
 .results {
     color: #FAE018;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 32px;
 }
 
 #choices {
@@ -33,10 +54,9 @@ h2, .final-score {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+    font-size: 20px;
 }
 
-.quiz-section {
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
+.question-number {
+    font-size: 20px;
 }
