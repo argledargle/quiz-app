@@ -10,6 +10,7 @@ body {
 }
 
 header {
+    text-shadow: 2px 2px black;
     top: 0;
 }
 
@@ -18,6 +19,17 @@ footer, header {
     position: fixed;
     width: 100%;
     background-color: #5DBCD2;
+}
+
+a {
+    color: #E93A70;
+}
+input:hover {
+    color: red;
+}
+a:hover {
+    background-color:#E93A70;
+    color: #5DBCD2;
 }
 
 footer {
