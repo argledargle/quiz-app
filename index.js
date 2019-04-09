@@ -59,7 +59,7 @@ const   questionArray = [
     },
     {
         question: `This term refers to any and all items that get distributed by the marketing team to prospects through various campaigns.`,
-        answers: [`collateral`, `material`, `content`, `tactic`],
+        answers: [`Collateral`, `Material`, `Content`, `Tactic`],
         correctAnswer: 3,
         additionalInfo: `Sales collateral, marketing materials, and blog content are all examples of different types of tactics.`
     }
