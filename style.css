@@ -10,11 +10,20 @@ body {
 }
 
 header {
+    top: 0;
+}
+
+footer, header {
     color: #E93A70;
     position: fixed;
-    top: 0;
     width: 100%;
     background-color: #5DBCD2;
+}
+
+footer {
+    font-size: 20px;
+    margin-top: 15 px;
+    bottom: 0;
 }
 /*gotta pop down these bad boys so they aren't covered by our header*/
 .start-section, .results, .quiz-section {
@@ -47,6 +56,7 @@ h2, .final-score {
     margin-right: auto;
     text-align: left;
     padding: 32px;
+    margin-bottom: 20px;
 }
 
 #choices {
