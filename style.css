@@ -11,12 +11,32 @@ header {
     color: #E93A70;
 }
 
-h2 {
+h2, .final-score {
     color: #BFD845;
 }
 
-.quiz-section {
-    color: 	#F17F50;
+/* this is the faded background image*/
+.quiz-section, .results {
     background-image: url(https://raw.githubusercontent.com/mariusbanea/thinkful-quiz-app/master/images/transparent.jpg);
-    
+}
+.quiz-section {
+    color: #f17f50;
+    padding: 32px;
+    }
+
+.results {
+    color: #FAE018;
+}
+
+#choices {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.quiz-section {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
