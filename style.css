@@ -1,14 +1,22 @@
 body {
-    background-image: url(https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fallbusiness%2Ffiles%2F2018%2F03%2FMarketing-and-sales-1200x720.jpg);
+    background-image: url(http://www.businesspromotions.net/wp-content/uploads/2018/10/How-To-Choose-Right-Sales-Promotion-Ways-For-Your-Toys-Store.png);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    color: darkgreen;
-    background: cyan;
+header {
+    color: #E93A70;
 }
 
+h2 {
+    color: #BFD845;
+}
 
+.quiz-section {
+    color: 	#F17F50;
+    background-image: url(https://raw.githubusercontent.com/mariusbanea/thinkful-quiz-app/master/images/transparent.jpg);
+    
+}

@@ -75,7 +75,7 @@ function loadQuestion() {
     $('#choices').empty();
     let totalNumberOfChoices = questionArray[questionNumber].answers.length;
     for (i=0; i<questionArray[questionNumber].answers.length; i++) {
-        let eachChoice = $("<input type='radio' class='option' name='option' value=" + i + ">" + questionArray[questionNumber].answers[i] + "<br>");
+        let eachChoice = $("<input type='radio' class='option' name='option' id =\""+questionArray[questionNumber].answers[i]+" \" value=" + i + ">" + questionArray[questionNumber].answers[i] + "<br>");
         $('#choices').append(eachChoice);
     };
     $("#questionNumberDisplay").text("Question " + (questionNumber +1)  + " of " + numberOfQuestions);
