@@ -150,4 +150,10 @@ label:active {
         margin-left: auto;
         margin-right: auto;
     }
+    #choices {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        font-size: 20px;
 }
