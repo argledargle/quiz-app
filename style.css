@@ -7,6 +7,7 @@ body {
     justify-content: center;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    margin: 0px;
 }
 
 header {
@@ -24,9 +25,7 @@ footer, header {
 a {
     color: #E93A70;
 }
-input:hover {
-    color: red;
-}
+
 a:hover {
     background-color:#E93A70;
     color: #5DBCD2;
@@ -42,10 +41,16 @@ footer {
     margin-top: 75px;
 }
 
-h2, .final-score {
+.results-title, .final-score {
     color: #BFD845;
     text-align: center;
     margin-top: 0;
+}
+
+.start-section {
+    color: #10324B;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* this is the faded background image*/
@@ -66,9 +71,28 @@ h2, .final-score {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
     padding: 32px;
     margin-bottom: 20px;
+
+}
+
+button {
+    background-color: #F37B4E;
+    color: #0F3248;
+    border: 0px;
+    font-size: 18px;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button:active {
+    background-color: #0F3248;
+    color: #F37B4E;
+}
+
+input {
+    display: none;
 }
 
 #choices {
@@ -79,6 +103,51 @@ h2, .final-score {
     font-size: 20px;
 }
 
+label:hover{
+    color: #BFD845;;
+}
+
+label:active {
+    color: #FAE018;
+}
+
 .question-number {
     font-size: 20px;
+}
+
+.correct-answer {
+    color: #F87A56;
+}
+
+#try-again-button-house {
+    align-content: center;
+}
+
+@media (min-width: 320px) {
+    .start-section, .results, .quiz-section {
+        margin-top: 125px;
+        width: 80%;
+    }
+    .results {
+        margin-bottom: 50px;
+    }
+    #choices {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+@media (min-width: 444px) {
+    .start-section, .results, .quiz-section {
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: 700px) {
+    .quiz-section {
+        padding: 32px;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
