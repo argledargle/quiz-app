@@ -75,7 +75,7 @@ function loadQuestion() {
     $('#choices').empty();
     let totalNumberOfChoices = questionArray[questionNumber].answers.length;
     for (i=0; i<questionArray[questionNumber].answers.length; i++) {
-        let eachChoice = $("<input type='radio' class='option' name='option' id =\""+questionArray[questionNumber].answers[i]+" \" value=" + i + ">" + questionArray[questionNumber].answers[i] + "<br>");
+        let eachChoice = $("<label><input type='radio' class='option' name='option' id =\""+questionArray[questionNumber].answers[i]+"\" value=" + i + ">" + questionArray[questionNumber].answers[i] + "</label><br>");
         $('#choices').append(eachChoice);
     };
     $("#questionNumberDisplay").text("Question " + (questionNumber +1)  + " of " + numberOfQuestions);
@@ -103,7 +103,7 @@ $(document).ready(function () {
         };
         //add the question and the info to the results page
         $('#result-message').append("<h3>Question " + (questionNumber +1) + ": " + questionArray[questionNumber].question + "</h3>");
-        $('#result-message').append("<h4>Answer: " + questionArray[questionNumber].additionalInfo);
+        $('#result-message').append("<h4 class='correct-answer'>Answer: " + questionArray[questionNumber].additionalInfo);
         //if the quiz is done fill out the final score, show the results, and hide the quiz.
         //if the quiz isn't done, then advance to the next question.
         if ((questionNumber + 1 ) == numberOfQuestions) {
