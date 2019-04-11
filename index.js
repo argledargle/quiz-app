@@ -41,7 +41,7 @@ const   questionArray = [
     },
     {
         question: `What is a piece of data that holds key information about your target buyer?`,
-        answers: [`A sales persona.`, `A prospect.`, `A buyer persona`, `A sales report`],
+        answers: [`A sales persona`, `A prospect`, `A buyer persona`, `A sales report`],
         correctAnswer: 2,
         additionalInfo: `These are very similar concepts, however, this particular item we're referring to is a buyer persona.`
     },
