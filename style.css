@@ -104,7 +104,8 @@ input {
 }
 
 label:hover{
-    color: #BFD845;;
+    color: #BFD845;
+    cursor: pointer;
 }
 
 label:active {

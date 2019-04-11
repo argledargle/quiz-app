@@ -23,7 +23,7 @@ const   questionArray = [
     },
     {
         question: `In order for sales and marketing to succeed, they should have the same ____.`,
-        answers: [`Incentive plan`, `Goals`, `Equipment`, `Tranining`],
+        answers: [`Incentive plan`, `Goals`, `Equipment`, `Training`],
         correctAnswer: 1,
         additionalInfo: `3 of these items will be specialized to the specific role of sales/marketing. However, the only overlap for a succesful team should be goals.`
     },
@@ -100,6 +100,9 @@ $(document).ready(function () {
         if (userAnswer == correctAnswer) {
             correctQuestions++;
             console.log(correctQuestions); //this is a little debugger for me.
+            window.alert('Congrats! You got that one right!')
+        } else {
+        window.alert('Good try. Here is some more info: '+questionArray[questionNumber].additionalInfo)
         };
         //add the question and the info to the results page
         $('#result-message').append("<h3>Question " + (questionNumber +1) + ": " + questionArray[questionNumber].question + "</h3>");
