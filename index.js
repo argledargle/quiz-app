@@ -25,7 +25,7 @@ const   questionArray = [
         question: `In order for sales and marketing to succeed, they should have the same ____.`,
         answers: [`Incentive plan`, `Goals`, `Equipment`, `Training`],
         correctAnswer: 1,
-        additionalInfo: `3 of these items will be specialized to the specific role of sales/marketing. However, the only overlap for a succesful team should be goals.`
+        additionalInfo: `3 of these items will be specialized to the specific role of sales/marketing. However, the only overlap for a successful team should be goals.`
     },
     {
         question: `Sales and ____ alignment is critical to grow the business.`,
